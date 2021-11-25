@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+ion-content{
+    font-family: 'Poppins', sans-serif;
+    --background:linear-gradient(#7292cf,#2855ae );
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-top:40px;
+        margin-left:20px;
+        margin-right:20px;
+        ion-label{
+            color:#fff;
+            font-size: 22px;
+        }
+        
+    }
+    .content_div{
+        background:white;
+        width:100%;
+        border-top-right-radius: 35px;
+        border-top-left-radius: 35px;
+        margin-top:25px;
+        padding-top:30px;
+        padding:20px;
+        padding-bottom:50px;
+        height:auto;
+        min-height: calc(100% - 80px);
+        .cardData{
+            padding-left:20px;
+            padding-top:20px;
+            margin-bottom:10px;
+           border:1px solid #ccc;
+           border-radius: 20px;
+           height:auto;
+            #subject{
+                color:#2855ae;
+                background-color: #e6efff;
+                padding:5px;
+                border-radius:10px;
+            }
+            p{
+               
+                span{
+                    float:right;
+                    margin-right:20px;
+                }
+            }
+            
+        }
+
+        ion-segment{
+            margin-bottom:20px;
+            ion-segment-button{
+                --background-checked:#7292cf;
+                --color-checked:#fff;
+                --indicator-color:#7292cf;
+            }
+        }
+     }
+    
+}

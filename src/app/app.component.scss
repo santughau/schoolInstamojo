@@ -117,3 +117,49 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+.user_main_div{
+  padding-top:50px;
+
+  .user_div{
+    height:110px;
+    width:100px;
+    border-radius: 5px;
+    border:3px solid white;
+    display:block;
+    margin:auto;
+    background-position: top;
+  }
+
+  .username{
+    display: block;
+    margin-top:20px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color:white;
+  }
+}
+
+
+.bg_image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#inbox-list{
+  background:transparent;
+
+  ion-item{
+    --background:transparent;
+
+    ion-icon{
+      color:white;      
+    }
+
+    ion-label{
+      color:white; 
+    }
+  }
+}

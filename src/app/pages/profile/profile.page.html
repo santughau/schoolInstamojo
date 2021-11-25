@@ -1,0 +1,129 @@
+<ion-content>
+  <div class="top">
+    <div class="back_div">
+      <ion-icon name="arrow-back-outline" (click)="goBack()" color="light" class="back_btn"></ion-icon>
+      <ion-label>My Profile</ion-label>
+    </div>
+    <div class="button">
+      <ion-button>
+        <ion-icon name="checkmark-outline"></ion-icon>
+        Done
+      </ion-button>
+    </div>
+  </div>
+
+  <div class="content_div">
+    <div class="profileBox">
+      <div class="imgBox">
+        <img src="../../../assets/11.jpg" />
+      </div>
+      <div class="imgText">
+        <p>Yamini Sontakke</p>
+        <h6>Class XI | Roll No : 001</h6>
+      </div>
+      <div>
+        <div class="camera">
+          <ion-icon name="camera-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainDiv">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-item>
+              <ion-label position="floating">Adhar No</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="6">
+            <ion-item>
+              <ion-label position="floating">Acayamic Year</ion-label>
+              <ion-select placeholder="Select One">
+                <ion-select-option value="f">2021-2022</ion-select-option>
+                <ion-select-option value="m">2020-2021</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <ion-item>
+              <ion-label position="floating">Acadamic Class</ion-label>
+              <ion-select placeholder="Select One">
+                <ion-select-option value="f">X</ion-select-option>
+                <ion-select-option value="m">IX</ion-select-option>
+                <ion-select-option value="m">VIII</ion-select-option>
+                <ion-select-option value="m">VII</ion-select-option>
+                <ion-select-option value="m">VI</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+          <ion-col size="6">
+            <ion-item>
+              <ion-label position="floating">Admission No.</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col size="6">
+            <ion-item>
+              <ion-label position="floating">Date Of Admission</ion-label>
+              <ion-datetime displayFormat="D MMM YYYY" value="2012-12-15T13:47:20.789"></ion-datetime>
+            </ion-item>
+          </ion-col>
+          <ion-col size="6">
+            <ion-item>
+              <ion-label position="floating">Date Of Birth</ion-label>
+              <ion-datetime displayFormat="D MMM YYYY" value="2012-12-15T13:47:20.789"></ion-datetime>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="6">
+            <ion-item>
+              <ion-label position="floating">Father Name</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+
+          <ion-col size="6">
+            <ion-item>
+              <ion-label position="floating">Mother Name</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+
+          <ion-col size="6">
+            <ion-item>
+              <ion-label position="floating">Parent Email Id</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+
+          <ion-col size="6">
+            <ion-item>
+              <ion-label position="floating">Mobile Number</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+
+          <ion-col size="12">
+            <ion-item>
+              <ion-label position="floating">Address</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+
+        </ion-row>
+       
+      </ion-grid>
+    </div>
+  </div>
+  
+</ion-content>

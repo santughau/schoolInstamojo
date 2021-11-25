@@ -1,0 +1,65 @@
+<ion-content>
+  <div class="top">
+    <div>
+      <ion-buttons slot="start" class="menu_btn">
+        <ion-menu-button color="light"></ion-menu-button>
+        <ion-label>Time Table</ion-label>
+      </ion-buttons>
+    </div>
+
+  </div>
+
+  <div class="content_div">
+    <div>
+      <ion-segment scrollable="true" mode="ios"  value="1"  (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="1">
+          <ion-label>MON</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="2">
+          <ion-label>TUE</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="3">
+          <ion-label>WED</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="4">
+          <ion-label>THU</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="5">
+          <ion-label>FRI</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="6">
+          <ion-label>SAT</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+
+   
+    <div>
+      <div class="cardData">
+        <span id="subject">Computer Science</span>
+        <p>05:15 AM - 09:00 AM</p><hr style="border:1px solid #ccc; margin-right:10px;">
+        <p>Cherise James <span>Lecture 1</span></p>        
+      </div>   
+      <div class="cardData">
+        <span id="subject">Mathematic</span>
+        <p>09:00 AM - 09:45 AM</p><hr style="border:1px solid #ccc; margin-right:10px;">
+        <p>Cherise James <span>Lecture 2</span></p>        
+      </div> 
+      <div class="cardData">
+        <span id="subject">English</span>
+        <p>09:45 AM - 10:30 AM</p><hr style="border:1px solid #ccc; margin-right:10px;">
+        <p>Marta Magana <span>Lecture 3 </span></p>        
+      </div> 
+      <div class="cardData">
+        <span id="subject">Lunch Break</span>
+        <p>10:30 AM - 11:00 AM</p><hr style="border:1px solid #ccc; margin-right:10px;">
+      </div> 
+      <div class="cardData">
+        <span id="subject">Sceince</span>
+        <p>11:00 AM - 11:45 AM</p><hr style="border:1px solid #ccc; margin-right:10px;">
+        <p>Miss Yamini <span>Lecture 4</span></p>        
+      </div>     
+    </div>
+  </div>
+
+</ion-content>
