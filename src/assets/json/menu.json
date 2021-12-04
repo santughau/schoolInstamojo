@@ -1,0 +1,72 @@
+{
+    "status": "success",
+    "code": 1,
+    "message": "questions found",
+    "document": {
+        "pageno": 1,
+        "pagesize": 10,
+        "total_count": "10",
+        "records": [
+            {
+                "menu_id": "1",
+                "image": "quiz.png",
+                "title": "Play Quiz"
+            },
+            {
+                "menu_id": "2",
+                "image": "assignment.png",
+                "title": "Assignment"
+            },
+            {
+                "menu_id": "3",
+                "image": "holiday.png",
+                "title": "School Holiday"
+            },
+            {
+                "menu_id": "4",
+                "image": "timetable.png",
+                "title": "Time Table"
+            },
+            {
+                "menu_id": "5",
+                "image": "result.png",
+                "title": "Result"
+            },
+            {
+                "menu_id": "6",
+                "image": "date.png",
+                "title": "Date Sheet"
+            },
+            {
+                "menu_id": "7",
+                "image": "questions.png",
+                "title": "Ask Doubts"
+            },
+            {
+                "menu_id": "8",
+                "image": "gallery.png",
+                "title": "School gallery"
+            },
+            {
+                "menu_id": "9",
+                "image": "calender.png",
+                "title": "Leave Application"
+            },
+            {
+                "menu_id": "10",
+                "image": "lock.png",
+                "title": "Change Password"
+            },
+            {
+                "menu_id": "11",
+                "image": "event.png",
+                "title": "Events"
+            },
+            {
+                "menu_id": "12",
+                "image": "logout.png",
+                "title": "Log Out"
+            }
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+<ion-content>
+  <div class="top">
+    <div class="back_div">
+      <ion-icon name="arrow-back-outline" (click)="goBack()" color="light" class="back_btn"></ion-icon>
+      <ion-label>Questions</ion-label>
+    </div>
+   
+  
+  </div>
+  <div class="question-number">Question : {{question_count+1}} / {{questions.length}} <span
+    style="float: right;">{{formatted_min}}:{{formatted_sec}}</span></div>
+  <div class="content_div">
+    <div class="row " *ngIf="skleton">
+      <div class="col-md-12 bk">
+        <div class="quiz-box custom-box" *ngIf="show">
+          <div style="text-align: justify;" class="question-text text-danger"
+            [innerHtml]="questions[question_count]?.question"></div>
+          <div class="option-container">
+  
+            <div style="text-align: justify;" id="0" class="option "
+              *ngFor="let item of questions[question_count]?.options; let i = index" [style.animation-delay.s]="i"
+              (click)="toggleClass(i)" [innerHtml]="item"></div>
+          </div>
+          <div class="next-question-btn">
+            <button [disabled]="btnDissabled" class="btn" type="button" (click)="next()">{{buttonTitle}}</button>
+          </div>
+          <div class="answers-indicator">
+            <div *ngFor="let item of questions; let i = index"></div>
+          </div>
+        </div>
+        <div class="result-box custom-box" *ngIf="!show" style="height: 100vh;">
+          <h1>Result</h1>
+          <form #resultForm="ngForm">
+            <table>
+              <tr>
+                <td class="bg-dark text-white">Total Questions</td>
+                <td class="total-questions">{{questions.length}}</td>
+              </tr>
+  
+              <tr>
+                <td class="bg-dark text-white">Correct Answers</td>
+                <td class="total-correct">{{correctAnswer}}</td>
+              </tr>
+              <tr>
+                <td class="bg-dark text-white">Wrong Answers</td>
+                <td class="total-wrong">{{questions.length - correctAnswer}}</td>
+              </tr>
+              <tr>
+                <td class="bg-dark text-white">Percentages</td>
+                <td class="percentage">{{100 * correctAnswer /questions.length | number : '1.2-2'}}%</td>
+              </tr>
+              <tr>
+                <td class="bg-dark text-white">Time  </td>
+                <td class="percentage">{{formatted_min}} : {{formatted_sec}}</td>
+              </tr>
+            </table>         
+          </form>
+        </div>
+      </div>
+  
+    </div>
+  
+  
+  </div>
+  
+</ion-content>

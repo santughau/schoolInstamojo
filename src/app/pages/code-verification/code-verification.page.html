@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="top">
+    <div class="back_div">
+      <ion-icon name="arrow-back-outline" (click)="goBack()" color="light" class="back_btn"></ion-icon>
+      <ion-label>Code Verification</ion-label>
+    </div>
+   
+  </div>
+
+  <div class="content_div">
+  
+    <div class="main_div">    
+      <p>Enter The 4 digit code that was send to your Mobile Number </p>
+      <div class="numberBox">
+          <div>
+            <input  maxlength="1" type="number"  />
+            <input  maxlength="1" type="number"  />
+            <input  maxlength="1" type="number"  />
+            <input  maxlength="1" type="number"  />
+          </div>
+        </div>
+        <button class="btn"> Verify</button>
+        <p class="resend">Resend Again</p>
+    </div>
+  </div>
+  
+</ion-content>

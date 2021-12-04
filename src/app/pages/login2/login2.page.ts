@@ -6,10 +6,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./login2.page.scss'],
 })
 export class Login2Page implements OnInit {
-
+  registerData = {
+    email: "",
+    password: "",
+    confirmPassword: ""
+  };
+  type: boolean = true;
   constructor(private _router: Router) { }
 
   ngOnInit() {
+  }
+
+  changeType() {
+    this.type = !this.type;
+    
   }
   goToHome() {
     this._router.navigate(['/home']);

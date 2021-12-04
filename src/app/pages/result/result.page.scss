@@ -30,18 +30,30 @@ ion-content{
                 color:#fff;
             }
         }
-        
+    }
+    .grade{
+        color:#fff;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin-top:25px;
+        flex-direction:column;
+        p:nth-child(1){
+            font-size: 50px;
+            margin-bottom:-10px;
+        }
     }
     .content_div{
         background:white;
         width:100%;
         border-top-right-radius: 35px;
         border-top-left-radius: 35px;
-        margin-top:125px;
+        margin-top:25px;
         padding-top:10px;
         padding:20px;
         padding-bottom:50px;
-        height:auto;
+        height:calc(100% - 200px);
+        
         p{
             text-align: center;
             color:#ccc;

@@ -1,5 +1,7 @@
 {
   "name": "schoolApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

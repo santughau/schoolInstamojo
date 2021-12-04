@@ -6,23 +6,69 @@
   <div class="content_div">
     <p id="para">Hi <span>Student</span></p>
     <h6>Sign in to continue</h6>
+    <form #registration="ngForm">
     <ion-list>
       <ion-item>
         <ion-label position="floating">Mobile Number / Email</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="email" placeholder="Email" name="email" #email="ngModel" [(ngModel)]="registerData.email"
+          required email></ion-input>
       </ion-item>
+      <div *ngIf="email.invalid && email.touched ">
+        <ion-text color="danger text-center">
+          <h4 style="padding-left: 20px; margin-top: 10px;">E-mail Required</h4>
+        </ion-text>
+      </div>
 
-      <ion-item>
-        <ion-label position="floating">Password</ion-label>
-        <ion-input type="password"></ion-input>
-        <ion-icon slot="end" name="eye-outline" class="ion-align-self-center"></ion-icon>
-      </ion-item>
+      
+      <div class="ion-margin-vertical">
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input [type]="type ? 'password' : 'text'" placeholder="Password" name="password" #password="ngModel"
+            [(ngModel)]="registerData.password" required></ion-input>
+          <!-- <ion-icon slot="end" name="eye-outline" class="ion-align-self-center"></ion-icon> -->
+
+
+          <ion-icon class="ion-align-self-center" name="eye-outline" slot="end" color="medium" (click)="changeType()"
+              [name]="type ? 'eye-outline' : 'eye-off-outline'"></ion-icon>
+        </ion-item>
+      </div>
+
+      <div *ngIf="password.invalid && password.touched ">
+        <ion-text color="danger text-center">
+          <h4 style="padding-left: 20px; margin-top: 10px;">Password Required</h4>
+        </ion-text>
+      </div>
+
+
+      <div class="ion-margin-vertical">
+        <ion-item>
+          <ion-label position="floating">Confirm Password</ion-label>
+          <ion-input [type]="type ? 'password' : 'text'" placeholder="Confirm Password" name="confirmPassword" #confirmPassword="ngModel"
+            [(ngModel)]="registerData.confirmPassword" required></ion-input>
+          <!-- <ion-icon slot="end" name="eye-outline" class="ion-align-self-center"></ion-icon> -->
+
+
+          <ion-icon class="ion-align-self-center" name="eye-outline" slot="end" color="medium" (click)="changeType()"
+              [name]="type ? 'eye-outline' : 'eye-off-outline'"></ion-icon>
+        </ion-item>
+      </div>
+
+      <div *ngIf="password.invalid && password.touched ">
+        <ion-text color="danger text-center">
+          <h4 style="padding-left: 20px; margin-top: 10px;">Confirm Password Required</h4>
+        </ion-text>
+      </div>
+
+
     </ion-list>
 
     <div class="btn">
-      <button type="submit" (click)="goToHome()">SIGN IN <ion-icon name="arrow-forward-outline"></ion-icon></button>
-      <p>Forget Password</p>
+      <ion-button color="danger" (click)="goToHome()" expand="block" [disabled]="registration.invalid">Register
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </ion-button>
+      <p>Create Account</p>
     </div>
+  </form>
   </div>
 
 

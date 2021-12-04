@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar >
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button mode="md" color="light"></ion-menu-button>
       <ion-button color="light" (click)="today()">Today</ion-button>
@@ -11,7 +11,6 @@
 </ion-header>
 
 <ion-content>
-
   <div *ngIf="showAddEvent" class="ion-padding">
     <ion-item>
       <ion-label><b>Title:</b></ion-label>
@@ -59,14 +58,15 @@
     </ion-col>
   </ion-row>
 
-  <calendar id="myCal " *ngIf="!showAddEvent" [eventSource]="allEvents" [calendarMode]="calendar.mode" startHour="0" noEventsLabel="There is no Event to Dispaly"
-    endHour="23" step="30" startingDayWeek="1" [currentDate]="calendar.currentDate"
-    (onTitleChanged)="onViewTitleChanged($event)" (onEventSelected)="onEventSelected($event)" [timeInterval]="30">
+  <calendar id="myCal " *ngIf="!showAddEvent" [eventSource]="allEvents" [calendarMode]="calendar.mode" startHour="0"
+    noEventsLabel="There is no Event to Dispaly" endHour="23" step="30" startingDayWeek="1"
+    [currentDate]="calendar.currentDate" (onTitleChanged)="onViewTitleChanged($event)"
+    (onEventSelected)="onEventSelected($event)" [timeInterval]="30">
   </calendar>
 
 
 
-  
+
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button (click)="showHideForm()">
@@ -75,3 +75,7 @@
     </ion-fab-button>
   </ion-fab>
 </ion-content>
+
+
+
+

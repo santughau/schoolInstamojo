@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="top">
+    <div class="back_div">
+      <ion-icon name="arrow-back-outline" (click)="goBack()" color="light" class="back_btn"></ion-icon>
+      <ion-label>Select Chapter</ion-label>
+    </div>
+   
+  </div>
+
+  <div class="content_div">
+    <div class="main_content_div">
+        <div class="card_div" *ngFor="let item of chapters" (click)="goToQuiz()">
+          <img src="../../../../assets/download.png" class="download" />
+  
+          <div class="round_div">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+          </div>
+  
+          <div class="content_divA">
+            <ion-label class="title_lbl">{{item.name}}</ion-label>
+            <ion-label class="small_lbl">{{item.name}}</ion-label>
+            <ion-progress-bar value="{{item.per/100}}"></ion-progress-bar>
+            <ion-label class="small_lbl">Download Notes Of This Chapter</ion-label>
+            <ion-label class="abs_lbl">{{item.per}}</ion-label>
+          </div>
+        </div>
+    </div>
+   
+  </div>
+  
+</ion-content>

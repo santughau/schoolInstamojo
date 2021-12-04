@@ -21,7 +21,8 @@ ion-content{
         margin-top:-15px;
         padding-top:30px;
         padding:20px;
-        height:calc(100% - 170px);
+        min-height:calc(100% - 100px);
+        height: auto;
         #para{
             color:black;
             margin-left:25px;
@@ -40,6 +41,7 @@ ion-content{
         }
         .btn{
             margin-top:25px;
+            width:100%;
             button{
                background:red; 
                color:#fff;

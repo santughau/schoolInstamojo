@@ -1,0 +1,142 @@
+{
+    "status": "success",
+    "code": 1,
+    "message": "questions found",
+    "document": {
+        "pageno": 1,
+        "pagesize": 10,
+        "total_count": "10",
+        "records": [
+            {
+                "questions_id": "1",
+                "exam_name": "Javascript Quiz",
+                "questions_exam_id": "1",
+                "question": "Which type of JavaScript language is ___",
+                "answer": "B",
+                "options": [
+                    "Object-Oriented",
+                    "Object-Based",
+                    "Assembly-language",
+                    "High-level"
+                ]
+            },
+            {
+                "questions_id": "2",
+                "exam_name": "Javascript Quiz",
+                "questions_exam_id": "1",
+                "question": "Which one of the following also known as Conditional Expression:",
+                "answer": "D",
+                "options": [
+                    "Alternative to if-else",
+                    "Switch statement",
+                    "If-then-else statement",
+                    "immediate if"
+                ]
+            },
+            {
+                "questions_id": "3",
+                "exam_name": "Javascript Quiz",
+                "questions_exam_id": "1",
+                "question": "In JavaScript, what is a block of statement?",
+                "answer": "B",
+                "options": [
+                    "Conditional block",
+                    "block that combines a number of statements into a single compound statement",
+                    "both conditional block and a single statement",
+                    "block that contains a single statement"
+                ]
+            },
+            {
+                "questions_id": "4",
+                "exam_name": "Javascript Quiz",
+                "questions_exam_id": "1",
+                "question": "When interpreter encounters an empty statements, what it will do:",
+                "answer": "D",
+                "options": [
+                    "Shows a warning",
+                    "Prompts to complete the statement",
+                    "Throws an error",
+                    "Ignores the statements"
+                ]
+            },
+            {
+                "questions_id": "5",
+                "exam_name": "Javascript Quiz",
+                "questions_exam_id": "1",
+                "question": "The 'function' and ' var' are known as:",
+                "answer": "C",
+                "options": [
+                    "Keywords",
+                    "Data types",
+                    "Declaration statements",
+                    "Prototypes"
+                ]
+            },
+            {
+                "questions_id": "6",
+                "exam_name": "Javascript Quiz",
+                "questions_exam_id": "1",
+                "question": "Which of the following variables takes precedence over the others if the names are the same?",
+                "answer": "B",
+                "options": [
+                    "Global variable",
+                    "The local element",
+                    "The two of the above",
+                    "None of the above"
+                ]
+            },
+            {
+                "questions_id": "7",
+                "exam_name": "Javascript Quiz",
+                "questions_exam_id": "1",
+                "question": "Which one of the following is the correct way for calling the JavaScript code?",
+                "answer": "D",
+                "options": [
+                    "Preprocessor",
+                    "Triggering Event",
+                    "RMI",
+                    "Function/Method"
+                ]
+            },
+            {
+                "questions_id": "8",
+                "exam_name": "Javascript Quiz",
+                "questions_exam_id": "1",
+                "question": "When there is an indefinite or an infinite value during an arithmetic computation in a program, then JavaScript prints______.",
+                "answer": "C",
+                "options": [
+                    "Prints an exception error",
+                    "Prints an overflow error",
+                    "Displays 'Infinity'",
+                    "Prints the value as such"
+                ]
+            },
+            {
+                "questions_id": "9",
+                "exam_name": "Javascript Quiz",
+                "questions_exam_id": "1",
+                "question": "In the JavaScript, which one of the following is not considered as an error:",
+                "answer": "C",
+                "options": [
+                    "Syntax error",
+                    "Missing of semicolons",
+                    "Division by zero",
+                    "Missing of Bracket"
+                ]
+            },
+            {
+                "questions_id": "10",
+                "exam_name": "Javascript Quiz",
+                "questions_exam_id": "1",
+                "question": "Which of the following givenfunctions of the Number Object formats a number with a different number of digits to the right of the decimal?",
+                "answer": "B",
+                "options": [
+                    "toExponential()",
+                    "toFixed()",
+                    "toPrecision()",
+                    "toLocaleString()"
+                ]
+            }
+        ]
+    }
+}

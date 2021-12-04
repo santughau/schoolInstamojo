@@ -35,10 +35,12 @@ ion-content{
         margin-top:0px;
         padding-top:30px;
         padding:20px;
-        height:calc(100% - 300px);
+        min-height:calc(100% - 100px);
+        height: auto;
         .btn{
             margin-top:25px;
-            button{
+            width:100%;
+             ion-button{
                background:red; 
                color:#fff;
                width:100%;

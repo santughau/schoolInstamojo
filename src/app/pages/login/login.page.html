@@ -7,25 +7,50 @@
   </div>
 
   <div class="content_div">
+    <form #registration="ngForm">
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Mobile Number / Email</ion-label>
+          <ion-input type="email" placeholder="Email" name="email" #email="ngModel" [(ngModel)]="registerData.email"
+            required email></ion-input>
+        </ion-item>
+        <div *ngIf="email.invalid && email.touched ">
+          <ion-text color="danger text-center">
+            <h4 style="padding-left: 20px; margin-top: 10px;">E-mail Required</h4>
+          </ion-text>
+        </div>
 
-    <ion-list>
-    <ion-item>
-      <ion-label position="floating">Mobile Number / Email</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
+        <div class="ion-margin-vertical">
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input [type]="type ? 'password' : 'text'" placeholder="Password" name="password" #password="ngModel"
+              [(ngModel)]="registerData.password" required></ion-input>
+            <!-- <ion-icon slot="end" name="eye-outline" class="ion-align-self-center"></ion-icon> -->
 
-    <ion-item>
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password"></ion-input>
-      <ion-icon slot="end" name="eye-outline" class="ion-align-self-center"></ion-icon>
-    </ion-item>
-  </ion-list>
 
-  <div class="btn">
-    <button type="submit" (click)="goToHome()">SIGN IN <ion-icon  name="arrow-forward-outline"></ion-icon></button>
-    <p>Forget Password</p>
+            <ion-icon class="ion-align-self-center" name="eye-outline" slot="end" color="medium" (click)="changeType()"
+                [name]="type ? 'eye-outline' : 'eye-off-outline'"></ion-icon>
+          </ion-item>
+        </div>
+
+        <div *ngIf="password.invalid && password.touched ">
+          <ion-text color="danger text-center">
+            <h4 style="padding-left: 20px; margin-top: 10px;">Password Required</h4>
+          </ion-text>
+        </div>
+      </ion-list>
+      <div class="btn">
+
+        <ion-button color="danger" (click)="goToHome()" expand="block" [disabled]="registration.invalid">Log In
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </ion-button>
+
+        <!-- 
+      <button type="submit" (click)="goToHome()" [disabled]="registration.invalid">SIGN IN <ion-icon name="arrow-forward-outline"></ion-icon></button> -->
+        <p>Forget Password</p>
+      </div>
+    </form>
   </div>
-  </div>
 
-  
+
 </ion-content>

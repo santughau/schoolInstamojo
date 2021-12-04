@@ -44,7 +44,8 @@ ion-content{
         padding-top:30px;
         padding:20px;
         padding-bottom:50px;
-        height:auto;
+        min-height:calc(100% - 100px);
+        height: auto;
         .profileBox{
             margin-top:20px;
             border:1px solid #2855ae;

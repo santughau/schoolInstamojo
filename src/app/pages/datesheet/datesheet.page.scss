@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+ion-content{
+    font-family: 'Poppins', sans-serif;
+    --background:linear-gradient(#7292cf,#2855ae );
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-top:40px;
+        margin-left:20px;
+        margin-right:20px;
+        .menu_btn{
+            ion-label{
+                color:#fff;
+                font-size: 24px;
+            }
+        }
+
+       
+        
+    }
+    .content_div{
+        background:white;
+        width:100%;
+        border-top-right-radius: 35px;
+        border-top-left-radius: 35px;
+        margin-top:25px;
+        padding-top:30px;
+        padding:20px;
+        padding-bottom:50px;
+        height:auto;
+        .list{
+            display: grid;
+            grid-template-columns:20% 45% 35%;
+            justify-items: center;
+            grid-gap:10px;
+            border-top:1px solid #ccc;
+            padding-top:10px;
+            padding-bottom:10px;
+            .one{
+                justify-self:center;
+                p{
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-bottom:-5px;
+                }
+                span{
+                   
+                }
+            }
+
+            .two{
+                justify-self:start;
+                p{
+                    text-align: left;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom:-5px;
+                }
+                span{
+                   color:#ccc;
+                }
+            }
+
+            .three{
+                justify-self:start;
+                align-self: center;
+            }
+        }
+       
+    }
+    
+}

@@ -1,0 +1,20 @@
+{
+    "status": "success",
+    "code": 1,
+    "message": "questions found",
+    "document": {
+        "pageno": 1,
+        "pagesize": 10,
+        "total_count": "10",
+        "records": [
+            {
+                "studentId": "",
+                "image": "",
+                "name": "",
+                "branch": "Computer Science Third Year",
+                "dob": "",
+                "rollNo": "001"
+            }
+        ]
+    }
+}

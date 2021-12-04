@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'result',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -25,39 +25,99 @@ const routes: Routes = [
   },
   {
     path: 'profile',
-    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+    loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfilePageModule)
   },
   {
     path: 'attendance',
-    loadChildren: () => import('./pages/attendance/attendance.module').then( m => m.AttendancePageModule)
+    loadChildren: () => import('./pages/attendance/attendance.module').then(m => m.AttendancePageModule)
   },
   {
     path: 'events',
-    loadChildren: () => import('./pages/events/events.module').then( m => m.EventsPageModule)
+    loadChildren: () => import('./pages/events/events.module').then(m => m.EventsPageModule)
   },
   {
     path: 'event-details',
-    loadChildren: () => import('./pages/event-details/event-details.module').then( m => m.EventDetailsPageModule)
+    loadChildren: () => import('./pages/event-details/event-details.module').then(m => m.EventDetailsPageModule)
   },
   {
     path: 'fees',
-    loadChildren: () => import('./pages/fees/fees.module').then( m => m.FeesPageModule)
+    loadChildren: () => import('./pages/fees/fees.module').then(m => m.FeesPageModule)
   },
   {
     path: 'pay-online',
-    loadChildren: () => import('./pages/pay-online/pay-online.module').then( m => m.PayOnlinePageModule)
+    loadChildren: () => import('./pages/pay-online/pay-online.module').then(m => m.PayOnlinePageModule)
   },
   {
     path: 'assignment',
-    loadChildren: () => import('./pages/assignment/assignment.module').then( m => m.AssignmentPageModule)
+    loadChildren: () => import('./pages/assignment/assignment.module').then(m => m.AssignmentPageModule)
   },
   {
     path: 'timetable',
-    loadChildren: () => import('./pages/timetable/timetable.module').then( m => m.TimetablePageModule)
+    loadChildren: () => import('./pages/timetable/timetable.module').then(m => m.TimetablePageModule)
   },
   {
     path: 'result',
-    loadChildren: () => import('./pages/result/result.module').then( m => m.ResultPageModule)
+    loadChildren: () => import('./pages/result/result.module').then(m => m.ResultPageModule)
+  },
+  {
+    path: 'datesheet',
+    loadChildren: () => import('./pages/datesheet/datesheet.module').then(m => m.DatesheetPageModule)
+  },
+  {
+    path: 'ask-doubt',
+    loadChildren: () => import('./pages/ask-doubt/ask-doubt.module').then(m => m.AskDoubtPageModule)
+  },
+  {
+    path: 'gallery',
+    loadChildren: () => import('./pages/gallery/gallery.module').then(m => m.GalleryPageModule)
+  },
+  {
+    path: 'change-password',
+    loadChildren: () => import('./pages/change-password/change-password.module').then( m => m.ChangePasswordPageModule)
+  },
+  {
+    path: 'event-list',
+    loadChildren: () => import('./pages/event-list/event-list.module').then( m => m.EventListPageModule)
+  },
+  {
+    path: 'details-page',
+    loadChildren: () => import('./pages/details-page/details-page.module').then( m => m.DetailsPagePageModule)
+  },
+  {
+    path: 'support',
+    loadChildren: () => import('./pages/support/support.module').then( m => m.SupportPageModule)
+  },
+  {
+    path: 'notification-page',
+    loadChildren: () => import('./pages/notification-page/notification-page.module').then( m => m.NotificationPagePageModule)
+  },
+  {
+    path: 'account-setting',
+    loadChildren: () => import('./pages/account-setting/account-setting.module').then( m => m.AccountSettingPageModule)
+  },
+  {
+    path: 'student-list',
+    loadChildren: () => import('./pages/student-list/student-list.module').then( m => m.StudentListPageModule)
+  },
+  {
+    path: 'code-verification',
+    loadChildren: () => import('./pages/code-verification/code-verification.module').then( m => m.CodeVerificationPageModule)
+  },
+  {
+    path: 'subject',
+    loadChildren: () => import('./pages/subject/subject.module').then( m => m.SubjectPageModule)
+  },
+  {
+    path: 'chapter-list',
+    loadChildren: () => import('./pages/chapter-list/chapter-list.module').then( m => m.ChapterListPageModule)
+  },
+  {
+    path: 'quiz',
+    loadChildren: () => import('./pages/quiz/quiz.module').then( m => m.QuizPageModule)
+  },
+  {
+    path: 'popup-component',
+    loadChildren: () => import('./pages/popup-component/popup-component.module').then( m => m.PopupComponentPageModule)
   }
 ];
 
